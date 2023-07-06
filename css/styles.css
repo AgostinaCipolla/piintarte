@@ -7840,13 +7840,9 @@ justify-content: space-between;
           justify-content: center;
           align-items: baseline;
 }
-.logoconte {
-  width: 33%;
-  height: 33%;
 
-}
 .logoprincipal{
-  width: 60%;
+  width: 75px;
 }
 .logo { width: 5vh;
        height: auto;
