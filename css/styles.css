@@ -14,13 +14,13 @@
 
   @font-face {
     font-family: "fuentepin";
-    src: url(../fuentes/fuentepin.TTF)
+    src: url(../fuentes/fuentepin.ttf)
     format("truetype");
   }
 
   @font-face {
     font-family: "bienvenida";
-    src: url(../fuentes/bienvenida.TTF)
+    src: url(../fuentes/bienvenida.ttf)
     format("truetype");
   }
 
