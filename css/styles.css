@@ -23,7 +23,19 @@
     src: url(../fuentes/bienvenida.ttf)
     format("truetype");
   }
+.abajo {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
 
+}
+.transparente {
+  opacity: 0;
+}
+.mio {
+  color: grey;
+ text-decoration: none;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -118,12 +130,17 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
-  border: 0;
+  border: 0.5;
   border-top: 1px solid;
-  opacity: 0.25;
+  opacity: 0.6;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -669,7 +686,7 @@ margin: 3%;
 }
 .artesanales{
   font-family: josefin sans;
-  font-size: 75%;
+  font-size: 82%;
 }
 .text-center > div {
   margin-bottom: 15px;
@@ -3555,6 +3572,7 @@ textarea.form-control-lg {
   --bs-dropdown-header-color: #adb5bd;
 }
 
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -3669,10 +3687,7 @@ textarea.form-control-lg {
   list-style: none;
 }
 
-.logo {
- width: 2%;
 
-}
 
 .nav-link {
   display: block;
@@ -3755,7 +3770,12 @@ textarea.form-control-lg {
   color: var(--bs-nav-pills-link-active-color);
   background-color: var(--bs-nav-pills-link-active-bg);
 }
-
+.nav-item{
+  transition: 1s;
+}
+.nav-item:hover{
+  transform: scale(1.1);
+}
 .nav-fill > .nav-link,
 .nav-fill .nav-item {
   flex: 1 1 auto;
@@ -3802,9 +3822,8 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: 0.375rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
@@ -3815,11 +3834,15 @@ textarea.form-control-lg {
 .navbar > .container-lg,
 .navbar > .container-xl,
 .navbar > .container-xxl {
-  display: flex;
+
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+.logoconte{
+  width: 10%;
+}
+
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
@@ -3904,6 +3927,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  justify-content: center;
 }
 
 .navbar-nav-scroll {
@@ -7831,16 +7855,33 @@ justify-content: space-between;
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
-
+.nuestras {
+  display: flex;
+  font-family: fantasy;
+  font-size: 1.2rem;
+}
+hr {
+  height: 8px;
+  width: 10%;
+  background-color: black;
+  color: black;
+  border: solid;
+}
+.redes {
+  justify-content: center;
+  align-items: center;
+}
 .redessociales { color: #0000;
           display: flex;
           justify-content: center;
           align-items: baseline;
 }
-
+.redessociales1 { color: #0000;
+        display: flex;
+}
 .logoprincipal{
   width: 75px;
 }
@@ -7848,6 +7889,10 @@ justify-content: space-between;
        height: auto;
        margin: 0.9vw;
        border-radius: 2%;
+       transition: linear 0.3s;
+}
+.logo:hover{
+  transform: scale(1.2);
 }
 .whatsapp {
     position: fixed;
@@ -8023,6 +8068,7 @@ justify-content: space-between;
 
 .fw-normal {
   font-weight: 400 !important;
+  font-size: 1.7rem;
 }
 
 .fw-bold {
@@ -8037,6 +8083,10 @@ justify-content: space-between;
   font-weight: bolder !important;
 }
 
+.fw-bolder2 {
+  font-weight: bolder !important;
+  font-size: 5rem;
+}
 .lh-1 {
   line-height: 1 !important;
 }
