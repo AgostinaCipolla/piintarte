@@ -36,6 +36,9 @@
   color: grey;
  text-decoration: none;
 }
+.nav-item {
+  font-size: 1.4rem;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -7883,7 +7886,7 @@ hr {
         display: flex;
 }
 .logoprincipal{
-  width: 75px;
+  width: 120px;
 }
 .logo { width: 5vh;
        height: auto;
